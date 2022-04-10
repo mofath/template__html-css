@@ -1,0 +1,31 @@
+{
+  "extends": "stylelint-config-bestit-base",
+  "rules": {
+      "at-rule-empty-line-before": [
+          "always",
+          {
+              "except": [
+                  "after-same-name",
+                  "first-nested"
+              ],
+              "ignore": [
+                  "after-comment"
+              ],
+              "ignoreAtRules": [
+                  "import",
+                  "font-face",
+                  "include",
+                  "mixin",
+                  "use",
+                  "forward",
+                  "function",
+                  "extend",
+                  "at-root",
+                  "keyframes"
+              ]
+          }
+      ],
+      "media-query-list-comma-newline-after": "always-multi-line",
+      "media-query-list-comma-space-after": "always-single-line"
+  }
+}
