@@ -1,0 +1,29 @@
+@import '../scss/index.scss';
+
+.parent {
+  background: #eee;
+}
+
+.container {
+  width: 300px;
+  margin: auto;
+  padding: 0 15px;
+  background: red;
+
+  @include mq($from: tablet) {
+    width: 750px;
+    background: yellow;
+    margin: auto;
+  }
+
+  @include mq($from: desk) {
+    width: 972px;
+    background: blue;
+    margin: auto;
+  }
+
+  @include mq($from: wide) {
+    width: 1170px;
+    background: pink;
+  }
+}
